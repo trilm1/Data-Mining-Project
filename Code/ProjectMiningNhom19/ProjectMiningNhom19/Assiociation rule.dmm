@@ -1,0 +1,538 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cc1b5137-d277-43b1-968e-f79fe6c2c805" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Mining Project19</ID>
+  <Name>Assiociation rule</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_MiningProject19</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6114" scrolltop="-1232" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="150" x="23453" y="16447" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="MiningProject19" left="-37" top="-381" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3366" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000260d000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_MiningProject19" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-6114</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-1232</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-37</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-381</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>150</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c3a2b47b-c8e4-43bc-a490-08aa26c5b6d8">
+    <DataSourceViewID>Project Mining Nhom19</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d0d0b59c-ada3-491c-8149-9eef20575350">
+      <ID>Contract</ID>
+      <Name>Contract</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0c0eed7f-e5f7-4be0-abc3-5a0eb80a9ad8">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d03c2832-a14a-4f76-9fe9-181bc12cd37b">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>Contract</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6cb478d1-a523-4c80-a0a3-3b2423540469">
+      <ID>Churn</ID>
+      <Name>Churn</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bed5d448-aa2c-4c2b-a200-5d949738f552">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="82848948-ab15-440e-9996-befe78329fba">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>Churn</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f2a6c3a4-9d7e-4119-93ac-7c5daf1f2edb">
+      <ID>Dependents</ID>
+      <Name>Dependents</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="15d5aa54-418f-4bca-b982-798564c53fbc">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0541eaf3-3b63-4160-9a45-514f68b4ab03">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>Dependents</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ca8c1773-3556-485b-bb98-c8923f98c60b">
+      <ID>Device Protection</ID>
+      <Name>Device Protection</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9a1ae45a-c06d-4802-a7e7-4ab121a9ef97">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b79d71b0-df54-4cf4-9c3c-2301210f9cbe">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>DeviceProtection</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d95c418e-a4cb-4a6e-8335-58212a3cf4bc">
+      <ID>F1</ID>
+      <Name>F1</Name>
+      <IsKey>true</IsKey>
+      <Type>Double</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9d3a8234-4ea8-406c-8916-ebef863baf3e">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="26a135dc-c377-4031-bbd6-802456ad4c21">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>F1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="356ef63f-180d-46e4-9667-5ae1c7aa9334">
+      <ID>Gender</ID>
+      <Name>Gender</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e00aa04f-2e2c-40a7-984a-b87d7c88dc21">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="35f30471-c945-48a3-a8a6-b1f139183c85">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>gender</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e9aeacbd-102a-4be4-bce3-fd8e081fb090">
+      <ID>Internet Service</ID>
+      <Name>Internet Service</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="73f0b8ca-8812-4f75-924f-9a51ae57fd8d">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ddced44-5762-4ba9-b22f-2d0626df907e">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>InternetService</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="708f4c25-5b75-42f8-a7c1-1994a3c08ee4">
+      <ID>Monthly Charges</ID>
+      <Name>Monthly Charges</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1f4377ab-18db-464a-95ef-5e093ed4673a">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="96ebb3de-c2af-426b-9525-2e43b0dcefc7">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>MonthlyCharges</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b928301f-ee2e-4c18-84cf-88dd66b11998">
+      <ID>Multiple Lines</ID>
+      <Name>Multiple Lines</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a1b61081-4b05-45d8-8ada-369bdc02188f">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5703d59d-b177-4ee5-8772-4463392ff322">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>MultipleLines</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b2a70a52-4f5e-466e-8c2a-563f92721308">
+      <ID>Online Backup</ID>
+      <Name>Online Backup</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8fe8b276-954e-4081-ba70-45e0291014af">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="35b8fd5b-cba2-4791-9270-5b827a1ef81a">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>OnlineBackup</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="397636c3-1a5f-45fd-8ed8-b7455b53e349">
+      <ID>Online Security</ID>
+      <Name>Online Security</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6e7eaeac-3486-433e-a0b4-509276116af2">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7441d196-c2d4-4622-aae3-585a44b62a68">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>OnlineSecurity</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="eec3d55e-4046-4e61-8e49-53d60abbad4b">
+      <ID>Paperless Billing</ID>
+      <Name>Paperless Billing</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dfcb78ce-8ebc-4138-b845-ff70da60cf13">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef0e2c3c-f97e-4ce7-9d33-5ac7fae869eb">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>PaperlessBilling</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4002ec5f-6202-4b21-aadf-ddf60b87b931">
+      <ID>Partner</ID>
+      <Name>Partner</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fbacf463-d6c7-45e3-b359-48692945fd66">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e23d8707-06c4-452e-b315-02c3d08263d4">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>Partner</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bb4e12cf-697a-4a67-ba51-f77b9c7769f7">
+      <ID>Payment Method</ID>
+      <Name>Payment Method</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ae7abc12-bc89-4771-9d8d-c98c1594df34">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="57181518-85f9-4be5-a361-16ecbf9ee2ea">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>PaymentMethod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d02bd478-5c01-47c2-a9ab-2d2e0021a2a8">
+      <ID>Phone Service</ID>
+      <Name>Phone Service</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e52442d5-81e8-4513-85ed-af84127d0613">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3356bafc-c3e5-4632-841c-8ea67ff011c8">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>PhoneService</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ef5ee5e3-e925-4c05-93eb-308a9a79f190">
+      <ID>Senior Citizen</ID>
+      <Name>Senior Citizen</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5ae32cfd-1a2d-4f83-8612-2d568d22431d">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="03810b1a-f063-43b4-b6f6-0ca263163a2b">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>SeniorCitizen</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3cf85e28-ce34-4929-baaf-5ce4c255675e">
+      <ID>Streaming Movies</ID>
+      <Name>Streaming Movies</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7c83d639-d30b-4339-9862-adc0f8a1c444">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cda71f6d-4ed3-46b9-a3b2-95c790e9eb47">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>StreamingMovies</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="10aa195c-13b7-45e1-9a1c-c75e3446db1a">
+      <ID>Streaming TV</ID>
+      <Name>Streaming TV</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a27eb0f-2a94-424b-b733-7736c94f09b6">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e269be98-d595-4ff7-bf7e-aa22e188cae8">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>StreamingTV</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0e78da52-4730-4afb-8b3b-1b7f6cde56b3">
+      <ID>Tech Support</ID>
+      <Name>Tech Support</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="204ab67c-1ceb-4dff-b9e5-16cc485dc5bf">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="470b5077-ffbb-4cc8-8645-223307d5dc34">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>TechSupport</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="017bed92-3750-416d-91c5-8df1388f5307">
+      <ID>Tenure</ID>
+      <Name>Tenure</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="746ad704-c2ff-4815-9d3c-5ea3fa0ceb9d">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f367b5bb-c5f4-4c3a-9d7f-aa01beaf1e62">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>tenure</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d9fc679f-ab58-42cb-a3c9-e48346ab8555">
+      <ID>Total Charges</ID>
+      <Name>Total Charges</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7e372d2d-447b-4db3-b88d-f459b185d678">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad56d422-dafd-4326-b239-ce9ffe8068a8">
+            <TableID>dbo_MiningProject19</TableID>
+            <ColumnID>TotalCharges</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="9daafc4d-9802-4f3a-8b33-ea1e86507629">
+      <ID>Mining Project19</ID>
+      <Name>Mining Project19</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="6930b97f-5dcd-44f4-96b8-e020f664534a">
+          <ID>Contract</ID>
+          <Name>Contract</Name>
+          <SourceColumnID>Contract</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="16a2682c-c867-48e6-b7c4-082ccfcbcb90">
+          <ID>Churn</ID>
+          <Name>Churn</Name>
+          <SourceColumnID>Churn</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="b45cf1cc-ecf1-481f-b53f-94e6fab7baf5">
+          <ID>Dependents</ID>
+          <Name>Dependents</Name>
+          <SourceColumnID>Dependents</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3b412cb7-e89e-4f37-bb63-bd9d887e3ee2">
+          <ID>Device Protection</ID>
+          <Name>Device Protection</Name>
+          <SourceColumnID>Device Protection</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1404bdd3-56aa-48c7-918c-67d6cc0bd6cb">
+          <ID>F1</ID>
+          <Name>F1</Name>
+          <SourceColumnID>F1</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="ee3ce058-b4d7-42ba-b185-4efc84ab7154">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f7d0f5c2-3aa3-4022-8291-6a900029b832">
+          <ID>Internet Service</ID>
+          <Name>Internet Service</Name>
+          <SourceColumnID>Internet Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="85fabb5c-10e9-47c6-b3bb-216e89c0adde">
+          <ID>Monthly Charges</ID>
+          <Name>Monthly Charges</Name>
+          <SourceColumnID>Monthly Charges</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="61d609ab-2faa-4007-a3b4-e20734c3be9e">
+          <ID>Multiple Lines</ID>
+          <Name>Multiple Lines</Name>
+          <SourceColumnID>Multiple Lines</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9e2938fa-9ae0-4bbb-9a8e-b5557018cfa4">
+          <ID>Online Backup</ID>
+          <Name>Online Backup</Name>
+          <SourceColumnID>Online Backup</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="bedb98be-e0f1-40de-bf1b-0dcc0b3ca9a2">
+          <ID>Online Security</ID>
+          <Name>Online Security</Name>
+          <SourceColumnID>Online Security</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0c4a6f66-1b99-4c97-ab4b-b1c9bd6effeb">
+          <ID>Paperless Billing</ID>
+          <Name>Paperless Billing</Name>
+          <SourceColumnID>Paperless Billing</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ba8f851c-f11b-446d-9fc8-4165710348d3">
+          <ID>Partner</ID>
+          <Name>Partner</Name>
+          <SourceColumnID>Partner</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e755f4a5-4d7e-48c2-8dbb-829bc9078cdc">
+          <ID>Payment Method</ID>
+          <Name>Payment Method</Name>
+          <SourceColumnID>Payment Method</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="607cafd3-c26a-4593-84f1-bb6010409a00">
+          <ID>Phone Service</ID>
+          <Name>Phone Service</Name>
+          <SourceColumnID>Phone Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="27429f1d-8a0e-457c-ad21-c3ebcc93e943">
+          <ID>Senior Citizen</ID>
+          <Name>Senior Citizen</Name>
+          <SourceColumnID>Senior Citizen</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="07c04c01-ed56-47b9-b122-5affd1720796">
+          <ID>Streaming Movies</ID>
+          <Name>Streaming Movies</Name>
+          <SourceColumnID>Streaming Movies</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e8d0078a-d9bc-4ffd-b3e2-1cf189c0bf5f">
+          <ID>Streaming TV</ID>
+          <Name>Streaming TV</Name>
+          <SourceColumnID>Streaming TV</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e82fe04e-565b-4c75-98cf-d103f83e8f4a">
+          <ID>Tech Support</ID>
+          <Name>Tech Support</Name>
+          <SourceColumnID>Tech Support</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="15e49c3e-7f49-4eb6-a825-09a30f1f39db">
+          <ID>Tenure</ID>
+          <Name>Tenure</Name>
+          <SourceColumnID>Tenure</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="49665122-661d-4a7c-82b7-fa9716af31bf">
+          <ID>Total Charges</ID>
+          <Name>Total Charges</Name>
+          <SourceColumnID>Total Charges</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

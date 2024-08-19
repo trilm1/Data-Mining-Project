@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "ProjectMiningNhom19", "ProjectMiningNhom19\ProjectMiningNhom19.dwproj", "{92DBE638-FD56-4EC8-8885-1023E2B83F83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92DBE638-FD56-4EC8-8885-1023E2B83F83}.Development|Default.ActiveCfg = Development
+		{92DBE638-FD56-4EC8-8885-1023E2B83F83}.Development|Default.Build.0 = Development
+		{92DBE638-FD56-4EC8-8885-1023E2B83F83}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A2B8587-CDBC-48F3-808C-F7E8FCC59F8F}
+	EndGlobalSection
+EndGlobal
